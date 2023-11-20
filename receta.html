@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sopa de cebolla tradicional | Restaurante Hoja de Otoño</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/receta.css" />
+        <link rel="stylesheet" type="text/css" href="Estilos/todos.css" />
+        <style>
+            body {
+                background-image: url(imágenes/otoño.avif);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header><h2>Restaurante Hoja de Otoño</h2></header>
+
+        <!--Pequeña introducción-->
+        
+        <p>Somos líderes en sopas y platos otoñales de todos los tipos. Situados en la zona norte del pueblo al sur de la ciudad superior del centro de Galicia, adjunto al <a href="formulario_hotel.html">Hotel Bienestar</a>.<br>
+        Nuestra especialidad, la sopa de cebolla, ha sido el plato estrella desde su incoporación al menú. Y, como estamos de aniversario, ¡os dejamos la receta para que la probéis en vuestra propia casa!</p><br>
+
+        <!--Receta. He separado las diferentes secciones con el atributo fieldset y añadido imágenes para que no haya solo texto y quede visualmente más ameno.-->
+
+        <div><h1>Sopa de cebolla</h1>
+
+        <img src="imágenes/sopa.jpg"> &nbsp;&nbsp; <img src="imágenes/sopa_de_cebolla.jpeg" /></div><br>
+
+        <fieldset>
+        <ol>
+            <h3>Ingredientes (cantidades para 4 personas):</h3> <img src="imágenes/cebollas.jpg" />
+        
+            <li>1kg. de cebollas.</li>
+            <li>2 l. de caldo de carne.</li>
+            <li>100 gr. de mantequilla.</li>
+            <li>1 cucharada de harina.</li>
+            <li>100 gr. de queso emmental suizo o gruyére rallado.</li>
+            <li>Pan tostado en rebanadas.</li>
+            <li>Tomillo.</li>
+            <li>1 hoja de laurel.</li>
+            <li>Pimienta.</li>
+
+        </ol>
+        </fieldset><br>
+
+        <fieldset>
+        <ul>
+            <h3>Proceso:</h3>
+            
+            <li>Pelar y partir las cebollas en rodajas finas.</li>
+            <li>Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que están transparentes sin dorarse.</li>
+            <li>Añadir la harina sin dejar de remover.</li>
+            <li>Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</li>
+            <li>Dejar cocer a fuego lento durante unos 15 minutos.</li>
+            <li>Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</li>
+           
+        </ul>
+        </fieldset><br>
+
+        <!--Al haber elegido hacer que esta página sea un restaurante, he decidido añadir un formulario para que se pueda reservar mesa.-->
+
+        <p>Para más recetas como ésta, visita nuestro restaurante, donde siempre es otoño. ¡Si vienes el día de tu cumple te regalaremos tarta!</p><br>
+
+        <fieldset>
+        <p><strong>Reserva una mesa</strong></p>
+        </fieldset><br>
+            
+        <form action="registro.php" method="get">
+            <label for="dia">Día y hora</label>
+            <input type="datetime-local" id="dia" name="dia" value="15/11/2023" min="15/11/2023" max="31/12/2023" />&nbsp;&nbsp;&nbsp;
+
+            <label for="personas">Número de personas</label>
+            <select id="personas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select><br><br>
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" maxlength="20" />&nbsp;&nbsp;&nbsp;
+
+            <label for="telefono">Número de contacto: </label>
+            <input type="text" id="telefono" name="telefono" maxlength="9" /><br><br>
+
+
+            <input type="submit" id="enviar" />
+
+            <input type="reset" id="resetear" />
+
+        </form><br>
+
+        <p>¡Esperamos verle pronto!</p>
+
+    </body>
+    
+</html>

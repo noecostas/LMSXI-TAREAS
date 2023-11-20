@@ -1,0 +1,11 @@
+
+header {
+    text-align: center;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font: italic 550 15px Verdana;
+    text-align: justify;
+}

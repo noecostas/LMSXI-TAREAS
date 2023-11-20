@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hotel Bienestar</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/formulario_hotel.css" />
+        <link rel="stylesheet" type="text/css" href="Estilos/todos.css" />
+        <style>
+            body {
+                background-image: url(imágenes/agua.avif);
+            }
+        </style>
+    </head>
+    <body>
+        <header><h2>Bienvenido al Hotel Bienestar</h2></header>
+
+        <!--Presentación del hotel-->
+        
+        <p>El Hotel Bienestar, situado en la zona norte del pueblo al sur de la ciudad superior del centro de Galicia, cuenta con gran variedad de servicios para que pueda pasar una agradable velada, solo o con sus seres queridos. Entre ellos se encuentran:
+            <strong>servicio de habitaciones, desayuno en la cama, sala de juegos y, por supuesto, nuestro Restaurante Hoja de Otoño, con nuestra receta estrella, la <a href="receta.html">sopa de cebolla</a></strong>.
+        </p><br><br>
+
+        <div><img src="imágenes/hotel.jpg" /></div>
+        
+        <!--Formulario con los datos necesarios para que se realice un registro-->
+
+        <p>Para realizar una reserva online, rellene el siguiente formulario:</p>
+
+        <fieldset>
+            <form action="registro.php" method="get">
+                
+                <img src="imágenes/habitacion.jpeg" />
+
+                <!--Primero los datos personales y de contacto y el número de noches-->
+            
+                <label for="nombre">Nombre  </label>
+                <input type="text" id="nombre" name="nombre" maxlength="50" />&nbsp;&nbsp;&nbsp;
+            
+                <label for="apellidos">Apellidos  </label>
+                <input type="text" id="apellidos" name="apellidos" maxlength="50" /><br>
+                <br>
+            
+                <label for="telefono">Teléfono de contacto  </label>
+                <input type="text" id="telefono" name="telefono" maxlength="9" />&nbsp;&nbsp;&nbsp;
+            
+                <label for="email">Correo electrónico  </label>
+                <input type="text" id="email" name="correo" maxlength="50" /><br>
+                <br>
+            
+                <label for="noches">Número de noches </label>
+                <select id="noches">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select><br>
+            
+                <!--Añadiremos ahora las fechas disponibles para que se elija los días que reservará la habitación-->
+            
+                <p>Seleccione las fechas de su estancia:</p>
+            
+                <label for="llegada">Fecha de llegada: </label>
+                <input type="date" id="llegada" name="llegada" value="15/11/2023" min="15/11/2023" max="31/12/2023" />&nbsp;&nbsp;&nbsp;
+            
+                <label for="salida">Fecha de salida: </label>
+                <input type="date" id="salida" name="salida" value="16/11/2023" min="16/11/2023" max="31/12/2023" /><br>
+                <br>
+            
+                <!--Tipo de habitación-->
+
+                <p>Seleccione el tipo de habitación:</p>
+            
+                <label for="habitacion">Habitación simple</label>
+                <input type="radio" id="habitacion" name="habitacion" value="h_simple" />&nbsp;&nbsp;&nbsp;
+            
+                <label for="habitacion">Habitación doble</label>
+                <input type="radio" id="habitacion" name="habitacion" value="h_doble" />&nbsp;&nbsp;&nbsp;
+            
+                <label for="habitacion">Habitación de matrimonio</label>
+                <input type="radio" id="habitacion" name="habitacion" value="h_matrimonio" /><br>
+                <br>
+            
+                <!--Preferencias sobre servicio extra-->
+            
+                <p>Seleccione las opciones extra que desee:</p>
+
+                <label for="desayuno">Desayuno</label>
+                <input type="checkbox" id="desayuno" name="desayuno" />&nbsp;&nbsp;&nbsp;   
+                <label for="comida">Comida</label>
+                <input type="checkbox" id="comida" name="comida" />&nbsp;&nbsp;&nbsp;   
+                <label for="cena">Cena</label>
+                <input type="checkbox" id="cena" name="cena" />&nbsp;&nbsp;&nbsp;   
+                <label for="cama_supl">Cama supletoria</label>
+                <input type="checkbox" id="cama_supl" name="cama_supl" /><br>
+                <br> 
+
+                <!--Aquí se dejará una sección para que el cliente pueda dejar comentarios--> 
+
+                <p>Si lo desea, puede dejar algún comentario sobre sus preferencias:</p>    
+                <textarea name="textarea"></textarea><br>
+                <br>    
+
+                <!--Finalmente añadiremos los botones para enviar o resetear--> 
+
+                <label for="enviar">Enviar formulario</label>
+                <input type="submit" id="enviar" name="enviar" /> &nbsp;&nbsp;&nbsp;    
+                <label for="borrar">Borrar formulario</label>
+                <input type="reset" id="borrar" name="borrar" />
+
+            </form>
+        </fieldset><br>
+
+        <!--Datos de contacto-->
+
+        <footer>
+            <p>Para consultar cualquier consulta, no dude en escribirnos a nuestro correo hotelbienestar@gmail.com o llamarnos al teléfono 999 666 699.</p>
+            <p>c/ Daniel Daniélez, nº 123, CP 55555</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+header {
+    background-color: rgb(147, 43, 212);
+    font-size: larger;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(176, 127, 222);
+}
+
+div {
+    font-size: larger;
+    img {
+        float: right;
+        margin-right: 2%;
+        width: 250px;
+    }
+}
+
+p.textoColor {
+    color: rgb(147, 43, 212);
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(118, 83, 245);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: rgb(174, 19, 19);
+    background-color: rgba(147, 43, 212, 0.571);
+    img {
+        width: 50px;
+    }
+    }
+
+    h4 {
+    img {
+        float: left;
+        height: 250px;
+        width: 175px;
+    }
+}
